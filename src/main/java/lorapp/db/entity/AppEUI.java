@@ -14,6 +14,11 @@ public class AppEUI {
 	@Column(nullable = false, unique = true)
 	private String appEUI;
 
+	public AppEUI(){}
+	public AppEUI(String appEUI){
+		this.appEUI = appEUI;
+	}
+	
 	public Long getId() {
 		return id;
 	}

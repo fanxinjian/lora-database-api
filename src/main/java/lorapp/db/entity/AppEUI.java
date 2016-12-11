@@ -13,6 +13,8 @@ public class AppEUI {
 	
 	@Column(nullable = false, unique = true)
 	private String appEUI;
+	
+	private boolean enabled = true;
 
 	public AppEUI(){}
 	public AppEUI(String appEUI){
@@ -26,13 +28,17 @@ public class AppEUI {
 	public void setId(Long id) {
 		this.id = id;
 	}
-
 	public String getAppEUI() {
 		return appEUI;
 	}
-
 	public void setAppEUI(String appEUI) {
 		this.appEUI = appEUI;
+	}
+	public boolean isEnabled() {
+		return enabled;
+	}
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
 	}
 	
 	

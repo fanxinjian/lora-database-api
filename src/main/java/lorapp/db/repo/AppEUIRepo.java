@@ -13,5 +13,5 @@ public interface AppEUIRepo extends CrudRepository<AppEUI, Long>{
 	List<AppEUI> findAllByAppEUI(String appEUI);
 	List<AppEUI> findAllByAppEUIAndEnabled(String appEUI, boolean enable);
 	AppEUI findByAppEUI(String appEUI);
-	AppEUI findbyAppEUIAndEnabled(String appEUI, boolean enable);
+//	AppEUI findbyAppEUIAndEnabled(String appEUI, boolean enable);
 }

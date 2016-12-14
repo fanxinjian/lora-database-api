@@ -15,6 +15,7 @@ public class SimpleSupervision {
 	
 	private String AppEUI;
 	private String DevEUI;
+	private String spvdMetric;
 	private String comparator; //less, lessOrequal, greater, greaterOrequal, equal
 	private float threshold;
 	private boolean enabled;
@@ -56,5 +57,23 @@ public class SimpleSupervision {
 	}
 	public void setAlarming(boolean alarming) {
 		this.alarming = alarming;
+	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getSpvdMetric() {
+		return spvdMetric;
+	}
+	public void setSpvdMetric(String spvdMetric) {
+		this.spvdMetric = spvdMetric;
+	}
+	public String getComparator() {
+		return comparator;
+	}
+	public void setComparator(String comparator) {
+		this.comparator = comparator;
 	}
 }

@@ -1,5 +1,7 @@
 package lorapp.db.supervision.enity;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -18,6 +20,16 @@ public class Alarm {
 	private Date cleardTime;
 	private String reason;
 	private boolean cleared = false;
+
+	public Alarm(){}
+
+	public Alarm(String appEUI, String devEUI, String reason){
+		this.appEUI = appEUI;
+		this.devEUI = devEUI;
+		this.reason = reason;
+		this.raiseTime = Calendar.getInstance().getTime();
+	}
+
 	
 	public Long getId() {
 		return id;

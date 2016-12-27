@@ -26,7 +26,7 @@ public class User {
     private String userName;
 
     @NotNull
-    @Size(min = 5, max = 10, message = "密码长度必须在5~10之间")
+    /*@Size(min = 5, max = 10, message = "密码长度必须在5~10之间")*/
     @Column(nullable = false, length = 50)
     private String passwd;
 

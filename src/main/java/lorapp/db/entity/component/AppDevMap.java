@@ -1,11 +1,13 @@
 package lorapp.db.entity.component;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 @Embeddable
 public class AppDevMap {
-	
+	@Column(nullable = false, unique = true, length = 50)
 	private String devEUI;
+	@Column(nullable = false, length = 50)
 	private String appEUI;
 	
 	public AppDevMap(){}

@@ -11,7 +11,7 @@ public class AppEUI {
 	@GeneratedValue
 	private Long id;
 	
-	@Column(nullable = false, unique = true)
+	@Column(nullable = false, unique = true, length = 50)
 	private String appEUI;
 	
 	private boolean enabled = true;
